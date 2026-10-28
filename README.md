@@ -24,7 +24,7 @@ Aplicación de consola con un menú interactivo que permite:
 
 ![Menú principal](docs/capturas/menu-principal.png)
 
-**Alineación titular de un equipo**
+**Alineación titular y suplentes de un equipo**
 
 ![Alineación titular](docs/capturas/plantilla.png)
 
@@ -32,7 +32,7 @@ Aplicación de consola con un menú interactivo que permite:
 
 ![Calendario](docs/capturas/calendario.png)
 
-**Resultado de un partido y clasificación**
+**Último resultado y clasificación final tras las seis jornadas**
 
 ![Resultado y clasificación](docs/capturas/clasificacion.png)
 
