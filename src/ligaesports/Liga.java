@@ -272,6 +272,17 @@ public class Liga {
 			throw new ColaPartidosVaciaException("No hay partidos pendientes para disputar");
 		}
 		Partido partido = partidosPendientes.remove();
+
+		// Reconvocar automáticamente a ambos equipos: si un titular está sancionado o lesionado,
+		// se libera su hueco y se sustituye por un suplente disponible del mismo rol.
+		// Así una sanción no impide disputar las jornadas siguientes.
+		try {
+			partido.getEquipoLocal().convocarTitularesAutomaticamente();
+			partido.getEquipoVisitante().convocarTitularesAutomaticamente();
+		} catch (RolNoDisponibleException | JugadorSancionadoException e) {
+			// Si no se puede completar la alineación, validarTitulares() lo detectará al registrar el resultado.
+		}
+
 		historialAcciones.push(" - Partido disputado: " + partido.getId());
 		return partido;
 	} /* Este método:
