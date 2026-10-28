@@ -154,6 +154,19 @@ public class Equipo {
 	}
 	
 	public int convocarTitularesAutomaticamente() throws RolNoDisponibleException, JugadorSancionadoException {
+		// Libera los huecos de titulares que estén sancionados o lesionados y los devuelve a suplentes.
+		// Sin esto, un titular sancionado se queda ocupando su hueco para siempre y el equipo
+		// nunca vuelve a tener una alineación válida en toda la temporada.
+		for (int i = 0; i < titulares.length; i++) {
+			Jugador titular = titulares[i];
+			if (titular != null && (titular.esSancionado() || titular.getEstado().equals("lesionado"))) {
+				titulares[i] = null;
+				if (!suplentes.contains(titular)) {
+					suplentes.add(titular);
+				}
+			}
+		}
+
 		int convocados = 0;
 		for (Jugador j : jugadores) {
 			if (j != null &&
