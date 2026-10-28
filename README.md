@@ -18,6 +18,24 @@ Aplicación de consola con un menú interactivo que permite:
 - **Incidencias y sanciones** — control de incidencias y jugadores sancionados.
 - **Clasificación, estadísticas e historial** — puntos a favor/en contra, clasificación y consulta del historial.
 
+## Capturas
+
+**Menú principal**
+
+![Menú principal](docs/capturas/menu-principal.png)
+
+**Alineación titular de un equipo**
+
+![Alineación titular](docs/capturas/plantilla.png)
+
+**Calendario de partidos generado automáticamente**
+
+![Calendario](docs/capturas/calendario.png)
+
+**Resultado de un partido y clasificación**
+
+![Resultado y clasificación](docs/capturas/clasificacion.png)
+
 ## Estructura del proyecto
 
 ```
