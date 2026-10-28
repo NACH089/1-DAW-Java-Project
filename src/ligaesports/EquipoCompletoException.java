@@ -1,4 +1,4 @@
-package _Liga_E_Sports_;
+package ligaesports;
 
 public class EquipoCompletoException extends Exception {
 	public EquipoCompletoException(String mensaje) {

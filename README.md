@@ -23,7 +23,7 @@ Aplicación de consola con un menú interactivo que permite:
 ```
 src/
 ├── module-info.java
-└── _Liga_E_Sports_/
+└── ligaesports/
     ├── Principal.java          # Punto de entrada y menús
     ├── Liga.java               # Lógica central de la liga
     ├── Equipo.java
@@ -59,14 +59,14 @@ El código fuente está en **UTF-8** (contiene acentos y la letra `ñ`), así qu
 javac -encoding UTF-8 -d bin (Get-ChildItem src -Recurse -Filter *.java).FullName
 
 # Ejecutar
-java -cp bin _Liga_E_Sports_.Principal
+java -cp bin ligaesports.Principal
 ```
 
 En Linux/macOS:
 
 ```bash
 javac -encoding UTF-8 -d bin $(find src -name "*.java")
-java -cp bin _Liga_E_Sports_.Principal
+java -cp bin ligaesports.Principal
 ```
 
 > Si omites `-encoding UTF-8`, la compilación falla con `illegal character: '\u00b1'` en métodos como `añadirJugador()`.

@@ -6,7 +6,7 @@
  * 			- 10 jugadores (5 por cada equipo y convocarlos para cada equipo).
  * 		Después de esto ya podrán generarse partidos, disputarse y mostar campeón, estadísticas, etc.  */
 
-package _Liga_E_Sports_;
+package ligaesports;
 
 import java.util.Scanner;
 

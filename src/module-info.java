@@ -1,2 +1,2 @@
-module TRIMESTRE_3º {
+module LigaESports {
 }

@@ -1,4 +1,4 @@
-package _Liga_E_Sports_;
+package ligaesports;
 
 public class Entrenador extends PersonaLiga {
 	private int experiencia;

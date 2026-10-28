@@ -1,4 +1,4 @@
-package _Liga_E_Sports_;
+package ligaesports;
 
 public class RolNoDisponibleException extends Exception {
 	public RolNoDisponibleException(String mensaje) {

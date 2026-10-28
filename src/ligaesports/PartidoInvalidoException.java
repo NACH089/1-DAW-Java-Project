@@ -1,4 +1,4 @@
-package _Liga_E_Sports_;
+package ligaesports;
 
 public class PartidoInvalidoException extends Exception{
 	public PartidoInvalidoException(String mensaje) {
