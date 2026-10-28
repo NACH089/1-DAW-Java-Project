@@ -1,0 +1,19 @@
+# Salida de compilación de Java
+bin/
+out/
+target/
+*.class
+
+# Logs y archivos temporales
+*.log
+*.tmp
+
+# Archivos del sistema operativo
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Editores
+.vscode/
+.idea/
+*.iml
