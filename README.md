@@ -74,3 +74,7 @@ java -cp bin _Liga_E_Sports_.Principal
 ## Autor
 
 **Nacho** — [@NACH089](https://github.com/NACH089)
+
+## Licencia
+
+Este proyecto se distribuye bajo la licencia [MIT](LICENSE).
